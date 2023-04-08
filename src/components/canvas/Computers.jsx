@@ -7,19 +7,19 @@ const Computers = () => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      <hemisphereLight intensity={0.2} groundColor="purple" />
       <pointLight intensity={1} />
       <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
+        position={[-20, 70, 50]}
+        angle={0.5}
         penumbra={1}
         castShadow
         shadow-mapSize={1024}
       />
       <primitive
         object={computer.scene}
-        scale={0.75}
-        position={[0, -3.25, 1.5]}
+        scale={0.7}
+        position={[0, -3, 0]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -39,6 +39,8 @@ const ComputerCanvas = () => {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          autoRotate={true}
+          autoRotateSpeed={5}
         />
         <Computers />
       </Suspense>
@@ -48,4 +50,4 @@ const ComputerCanvas = () => {
   );
 };
 
-export default Computers;
+export default ComputerCanvas;
