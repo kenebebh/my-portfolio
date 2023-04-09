@@ -3,7 +3,7 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { fadeIn, textVariant } from "../utils/motion";
+import { textVariant } from "../utils/motion";
 
 // import { Text3D } from "@react-three/drei";
 
