@@ -2,7 +2,6 @@ import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
 import {
   About,
   Contact,
-  Experience,
   Feedbacks,
   Hero,
   Navbar,
@@ -20,7 +19,6 @@ function App() {
           <Hero />
         </div>
         <About />
-        <Experience />
         <Tech />
         <Works />
         <Feedbacks />
