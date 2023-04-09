@@ -2,7 +2,6 @@ import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
 import {
   About,
   Contact,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
@@ -21,7 +20,6 @@ function App() {
         <About />
         <Tech />
         <Works />
-        <Feedbacks />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
