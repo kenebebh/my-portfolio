@@ -1,4 +1,3 @@
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -15,16 +14,16 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+    <motion.div variants={fadeIn("left", "spring", index * 0.5, 0.75)}>
+      <div
+        options={{ max: 20, scale: 0.5, speed: 100 }}
+        className="bg-tertiary md:pr-4 rounded-2xl w-full h-fit flex flex-col hover:bg-[#151030b4] transition-all duration-700 md:flex-row"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-full md:h-[340px] lg:h-[400px] basis-1/2">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl rounded-b-none md:rounded-l-2xl md:rounded-r-none"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -41,24 +40,26 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
-        </div>
+        <div className="py-8 lg:py-12 px-8 lg:px-10 basis-1/2 flex justify-between flex-col">
+          <div>
+            <h3 className="text-white font-bold text-[32px]">{name}</h3>
+            <p className="mt-2 text-secondary text-[16px]">{description}</p>
+          </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-              #{tag.name}
-            </p>
-          ))}
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+                #{tag.name}
+              </p>
+            ))}
+          </div>
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };
 
-const Works = () => {
+const Projects = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -89,4 +90,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "works");
+export default SectionWrapper(Projects, "projects");

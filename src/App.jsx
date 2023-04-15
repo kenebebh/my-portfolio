@@ -5,8 +5,9 @@ import {
   Hero,
   Navbar,
   Tech,
-  Works,
+  Projects,
   StarsCanvas,
+  SocialLinks,
 } from "./components";
 
 function App() {
@@ -16,10 +17,11 @@ function App() {
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
+          <SocialLinks />
         </div>
         <About />
         <Tech />
-        <Works />
+        <Projects />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
