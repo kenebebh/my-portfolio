@@ -10,11 +10,7 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
   carrent,
   jobit,
   tripguide,
@@ -42,15 +38,15 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Custom Web Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Website Maintenance & Analytics",
+    icon: mobile,
+  },
+  {
+    title: "Technical Writer",
     icon: creator,
   },
 ];
@@ -85,28 +81,12 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
     name: "Three JS",
     icon: threejs,
   },
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
