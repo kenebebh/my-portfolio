@@ -15,10 +15,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("left", "spring", index * 0.5, 0.75)}>
-      <div
-        options={{ max: 20, scale: 0.5, speed: 100 }}
-        className="bg-tertiary md:pr-4 rounded-2xl w-full h-fit flex flex-col hover:bg-[#151030b4] transition-all duration-700 md:flex-row"
-      >
+      <div className="bg-tertiary md:pr-4 rounded-2xl w-full h-fit flex flex-col hover:bg-[#151030b4] transition-all duration-700 md:flex-row">
         <div className="relative w-full h-full md:h-[340px] lg:h-[400px] basis-1/2">
           <img
             src={image}

@@ -23,9 +23,6 @@ const Tech = () => {
             key={technology.name}
           >
             <BallCanvas icon={technology.icon} />
-            {/* <Text3D smooth={1} lineHeight={0.5} letterSpacing={-0.025}>
-            {technology.name}
-          </Text3D> */}
             <p>{technology.name}</p>
           </div>
         ))}

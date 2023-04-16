@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { slideIn } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <div className="relative w-full h-screen mx-auto">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[100px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -12,7 +13,12 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-48 violet-gradient" />
         </div>
 
-        <div>
+        <motion.div
+          variants={slideIn("down", "spring", "", 0.8)}
+          initial="hidden"
+          animate="show"
+          className="pt-8"
+        >
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915eff]">Kene</span>
           </h1>
@@ -21,7 +27,7 @@ const Hero = () => {
             interfaces and dynamic web pages and applications that seamlessly
             blend form and function.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
@@ -39,7 +45,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 
