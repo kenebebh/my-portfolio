@@ -9,6 +9,9 @@ import {
   css,
   reactjs,
   redux,
+  jest,
+  firebase,
+  scss,
   tailwind,
   git,
   carrent,
@@ -61,6 +64,10 @@ const technologies = [
     icon: css,
   },
   {
+    name: "SASS/SCSS",
+    icon: scss,
+  },
+  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -69,12 +76,20 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
     name: "Redux Toolkit",
     icon: redux,
+  },
+  {
+    name: "Jest",
+    icon: jest,
   },
   {
     name: "Tailwind CSS",

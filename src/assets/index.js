@@ -14,6 +14,10 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import jest from "./tech/jest.png";
+import firebase from "./tech/firebase.png";
+import scss from "./tech/scss.jpeg";
+
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
@@ -36,6 +40,9 @@ export {
   javascript,
   reactjs,
   redux,
+  jest,
+  firebase,
+  scss,
   tailwind,
   typescript,
   threejs,

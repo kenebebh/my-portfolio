@@ -10,22 +10,27 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-48 violet-gradient" />
+          <div className="w-1 sm:h-80 h-52 violet-gradient" />
         </div>
 
         <motion.div
           variants={slideIn("down", "spring", "", 0.8)}
           initial="hidden"
           animate="show"
-          className="pt-8"
+          className="pt-2"
         >
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915eff]">Kene</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 lg:mr-12`}>
-            I am a skilled web developer dedicated to building intuitive
-            interfaces and dynamic web pages and applications that seamlessly
-            blend form and function.
+            I am a skilled frontend developer dedicated to bringing ideas to
+            life through creative and intuitive designs, responsive layouts, and
+            dynamic interactions.
+          </p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 lg:mr-12`}>
+            Whether you're looking to build a custom website, redesign an
+            existing one, or optimize its performance, I'm here to help you
+            achieve your goals and make your online presence stand out
           </p>
         </motion.div>
       </div>

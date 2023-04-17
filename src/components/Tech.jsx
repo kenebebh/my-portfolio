@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 
-// import { Text3D } from "@react-three/drei";
-
 const Tech = () => {
   return (
     <div className="flex flex-col">
