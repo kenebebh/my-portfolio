@@ -7,7 +7,7 @@ const SocialLinks = () => {
   const style = { color: "#915eff", fontSize: "2.5rem" };
 
   return (
-    <div className="fixed bottom-12 right-0 w-12 h-56 flex flex-col justify-evenly sm:mr-0 md:mr-2">
+    <div className="fixed bottom-12 right-0 w-12 h-56 flex flex-col justify-evenly sm:mr-0 md:mr-2 lg:mr-4 2xl:mr-8">
       <IconContext.Provider value={{ className: "contactIcon" }}>
         <a
           href="https://www.linkedin.com/in/kenebebh-banigo/"
