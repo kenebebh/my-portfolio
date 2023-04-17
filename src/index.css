@@ -13,6 +13,14 @@
   color-scheme: dark;
 }
 
+.contactIcon:hover {
+  fill: #2710a5e0;
+}
+
+.githubContactIcon:hover {
+  fill: #181818;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

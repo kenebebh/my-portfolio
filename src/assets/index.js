@@ -16,7 +16,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import jest from "./tech/jest.png";
 import firebase from "./tech/firebase.png";
-import scss from "./tech/scss.jpeg";
+import scss from "./tech/scss.png";
 
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
