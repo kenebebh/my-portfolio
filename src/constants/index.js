@@ -14,9 +14,8 @@ import {
   scss,
   tailwind,
   git,
-  carrent,
-  jobit,
-  tripguide,
+  portfolio,
+  repoRetriever,
   threejs,
 } from "../assets";
 
@@ -124,7 +123,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: portfolio,
     source_code_link: "https://github.com/",
   },
   {
@@ -145,28 +144,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
+    image: repoRetriever,
     source_code_link: "https://github.com/",
   },
 ];
