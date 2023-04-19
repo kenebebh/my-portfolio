@@ -106,46 +106,52 @@ const technologies = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "My portfolio website is designed to showcase my skills and experience as a web developer. It has been optimized for all screens, from large desktop displays to mobile devices, ensuring that my work is accessible and user-friendly for everyone. The site is built with pixel-perfect precision, and is also fast and optimized for quick loading times.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "three.js",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "framer-motion",
         color: "pink-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "blue-text-gradient",
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/",
+    live_link: "https://bebh-portfolio.netlify.app/",
+    source_code_link: "https://github.com/kenebebh/my-portfolio",
   },
   {
-    name: "Job IT",
+    name: "Github repo retriever",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The Github repo retriever is a webapp that allows users to easily retrieve and explore Github repositories. The user can enter a valid Github username and get a complete list of all the user's repositories, along with detailed information on each one.The application fetches data from the Github REST API. Each repository when clicked on, shows detailed information about the repo, with a livelink to the repositories code.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "GitHub-Rest-API",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
     image: repoRetriever,
-    source_code_link: "https://github.com/",
+    live_link: "https://github-repo-retriever.netlify.app/",
+    source_code_link: "https://github.com/kenebebh/github-repo-retriever",
   },
 ];
 
