@@ -14,7 +14,7 @@ const Hero = () => {
         </div>
 
         <motion.div
-          variants={slideIn("down", "spring", "", 0.8)}
+          variants={slideIn("right", "spring", "", 0.8)}
           initial="hidden"
           animate="show"
           className="pt-2"

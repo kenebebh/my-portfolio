@@ -134,7 +134,7 @@ const projects = [
   {
     name: "Github repo retriever",
     description:
-      "The Github repo retriever is a webapp that allows users to easily retrieve and explore Github repositories. The user can enter a valid Github username and get a complete list of all the user's repositories, along with detailed information on each one.The application fetches data from the Github REST API. Each repository when clicked on, shows detailed information about the repo, with a livelink to the repositories code.",
+      "The Github repo retriever is a webapp that allows users to easily retrieve and explore Github repositories. The user can enter a valid Github username and get a complete list of all the user's repositories, along with detailed information on each one.The data is from the Github REST API. When any repository is clicked on, detailed information about the repo is shown.",
     tags: [
       {
         name: "react",
