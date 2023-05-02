@@ -17,6 +17,7 @@ import {
   portfolio,
   repoRetriever,
   threejs,
+  sumz,
 } from "../assets";
 
 export const navLinks = [
@@ -128,7 +129,7 @@ const projects = [
       },
     ],
     image: portfolio,
-    live_link: "https://bebh-portfolio.netlify.app/",
+    live_link: "https://bebh.netlify.app/",
     source_code_link: "https://github.com/kenebebh/my-portfolio",
   },
   {
@@ -152,6 +153,32 @@ const projects = [
     image: repoRetriever,
     live_link: "https://github-repo-retriever.netlify.app/",
     source_code_link: "https://github.com/kenebebh/github-repo-retriever",
+  },
+  {
+    name: "ArtiSum",
+    description:
+      "This web application uses Artificial Intelligence to summarize articles for users. With this app, users can input a link to any article and receive a concise summary of the content. The app also allows users to save their searches and return to them later, making it a useful tool for researchers, students, and anyone who needs to quickly summarize lengthy articles.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux Toolkit",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "RestAPI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+    ],
+    image: sumz,
+    live_link: "https://artisumz.netlify.app/",
+    source_code_link: "https://github.com/kenebebh/ArticleSummarizer",
   },
 ];
 

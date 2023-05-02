@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { slideIn } from "../utils/motion";
+import { slideIn, fadeIn } from "../utils/motion";
 
 const Hero = () => {
   return (
@@ -13,26 +13,36 @@ const Hero = () => {
           <div className="w-1 h-96 violet-gradient" />
         </div>
 
-        <motion.div
-          variants={slideIn("right", "spring", "", 0.8)}
-          initial="hidden"
-          animate="show"
-          className="pt-2"
-        >
-          <h1 className={`${styles.heroHeadText} text-white`}>
+        <div className="pt-2">
+          <motion.h1
+            variants={slideIn("down", "spring", "", 0.8)}
+            initial="hidden"
+            animate="show"
+            className={`${styles.heroHeadText} text-white`}
+          >
             Hi, I'm <span className="text-[#915eff]">Kene</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 lg:mr-12`}>
+          </motion.h1>
+          <motion.p
+            variants={fadeIn("left", "spring", "", 0.8)}
+            initial="hidden"
+            animate="show"
+            className={`${styles.heroSubText} mt-2 text-white-100 lg:mr-12`}
+          >
             I am a skilled frontend developer dedicated to bringing ideas to
             life through creative and intuitive designs, responsive layouts, and
             dynamic interactions.
-          </p>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 lg:mr-12`}>
+          </motion.p>
+          <motion.p
+            variants={fadeIn("left", "spring", "0.2", 0.8)}
+            initial="hidden"
+            animate="show"
+            className={`${styles.heroSubText} mt-2 text-white-100 lg:mr-12`}
+          >
             Whether you're looking to build a custom website, redesign an
             existing one, or optimize its performance, I'm here to help you
             achieve your goals and make your online presence stand out
-          </p>
-        </motion.div>
+          </motion.p>
+        </div>
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

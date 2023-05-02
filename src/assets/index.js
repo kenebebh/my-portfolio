@@ -22,6 +22,7 @@ import typescript from "./tech/typescript.webp";
 import threejs from "./tech/threejs.webp";
 import repoRetriever from "./repoRetriever.webp";
 import portfolio from "./portfolio.webp";
+import sumz from "./sumz.webp";
 
 export {
   myLogo,
@@ -46,4 +47,5 @@ export {
   threejs,
   portfolio,
   repoRetriever,
+  sumz,
 };

@@ -4,6 +4,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { TbCircleArrowUpRight } from "react-icons/tb";
 
 const ProjectCard = ({
   index,
@@ -11,8 +12,10 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  live_link,
   source_code_link,
 }) => {
+  const style = { fontSize: "1.5rem" };
   return (
     <motion.div variants={fadeIn("left", "spring", index * 0.5, 0.75)}>
       <div className="bg-tertiary md:pr-4 rounded-2xl w-full h-full flex flex-col hover:bg-[#151030b4] transition-all duration-700 md:flex-row">
@@ -23,7 +26,7 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl rounded-b-none md:rounded-l-2xl md:rounded-r-none"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute top-0 right-0 flex flex-col gap-y-2 m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -33,6 +36,12 @@ const ProjectCard = ({
                 alt="github"
                 className="w-1/2 h-1/2 object-contain"
               />
+            </div>
+            <div
+              onClick={() => window.open(live_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <TbCircleArrowUpRight style={style} />
             </div>
           </div>
         </div>
