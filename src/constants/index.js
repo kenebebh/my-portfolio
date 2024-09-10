@@ -18,6 +18,7 @@ import {
   repoRetriever,
   threejs,
   sumz,
+  myOdyssey,
 } from "../assets";
 
 export const navLinks = [
@@ -41,7 +42,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Custom Web Development",
+    title: "Responsive Web Development",
     icon: backend,
   },
   {
@@ -107,30 +108,38 @@ const technologies = [
 
 const projects = [
   {
-    name: "Portfolio",
+    name: "My Odyssey Admin Dashboard",
     description:
-      "My portfolio website is designed to showcase my skills and experience as a web developer. It has been optimized for all screens, from large desktop displays to mobile devices, ensuring that my work is accessible and user-friendly for everyone. The site is built with pixel-perfect precision, and is also fast and optimized for quick loading times.",
+      "The My Odyssey Admin Dashboard is a mockup admin dashboard that enables administrators to efficiently manage users, destinations, travel content, and other critical app operations.The dashboard was built to showcase my ability to implement real-world admin functions, with a focus on clean UI, smooth UX, and robust data management, as well as CRUD (Create, Read, Update, Delete) operations.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "three.js",
+        name: "next.js",
         color: "green-text-gradient",
       },
       {
-        name: "framer-motion",
+        name: "tanstack query",
         color: "pink-text-gradient",
       },
       {
         name: "tailwindcss",
         color: "blue-text-gradient",
       },
+      {
+        name: "zod",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "shadcn",
+        color: "green-text-gradient",
+      },
     ],
-    image: portfolio,
-    live_link: "https://bebh.netlify.app/",
-    source_code_link: "https://github.com/kenebebh/my-portfolio",
+    image: myOdyssey,
+    live_link: "https://my-odyssey-dashboard.vercel.app/",
+    source_code_link: "https://github.com/kenebebh/my-odyssey-dashboard",
   },
   {
     name: "Github repo retriever",
@@ -155,30 +164,30 @@ const projects = [
     source_code_link: "https://github.com/kenebebh/github-repo-retriever",
   },
   {
-    name: "ArtiSum",
+    name: "Portfolio",
     description:
-      "This web application uses Artificial Intelligence to summarize articles for users. With this app, users can input a link to any article and receive a concise summary of the content. The app also allows users to save their searches and return to them later, making it a useful tool for researchers, students, and anyone who needs to quickly summarize lengthy articles.",
+      "My portfolio website is designed to showcase my skills and experience as a web developer. It has been optimized for all screens, from large desktop displays to mobile devices, ensuring that my work is accessible and user-friendly for everyone. The site is built with pixel-perfect precision, and is also fast and optimized for quick loading times.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "Redux Toolkit",
+        name: "three.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "framer-motion",
         color: "pink-text-gradient",
       },
       {
-        name: "RestAPI",
-        color: "green-text-gradient",
-      },
-      {
         name: "tailwindcss",
-        color: "green-text-gradient",
+        color: "blue-text-gradient",
       },
     ],
-    image: sumz,
-    live_link: "https://artisumz.netlify.app/",
-    source_code_link: "https://github.com/kenebebh/ArticleSummarizer",
+    image: portfolio,
+    live_link: "https://bebh.netlify.app/",
+    source_code_link: "https://github.com/kenebebh/my-portfolio",
   },
 ];
 

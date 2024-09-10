@@ -23,6 +23,7 @@ import threejs from "./tech/threejs.webp";
 import repoRetriever from "./repoRetriever.webp";
 import portfolio from "./portfolio.webp";
 import sumz from "./sumz.webp";
+import myOdyssey from "./myOdysseyDashboard.webp";
 
 export {
   myLogo,
@@ -48,4 +49,5 @@ export {
   portfolio,
   repoRetriever,
   sumz,
+  myOdyssey,
 };
